@@ -1,0 +1,195 @@
+---
+title: "36-315 Static Graphics Group Project, Spring 2018"
+author: "See Canvas for Your Group Members"
+date: "See Due Dates Below"
+output: 
+  html_document:
+    toc:  true
+    toc_float:  true
+    code_folding:  show
+---
+
+#  Static Graphics Group Project
+
+#  Data
+
+You get to pick your own dataset.
+
+##  Sources
+
+Here are some repositories with many, many datasets to choose from:
+
++  [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.html)
++  [Kaggle](https://www.kaggle.com/datasets)
++  [Dream To Learn](https://dreamtolearn.com/ryan/1001_datasets)
++  [Google Public Data Explorer](https://www.google.com/publicdata/directory)
++  [The US Government](https://www.data.gov/)
++  [Stanford Statistics](http://statweb.stanford.edu/~sabatti/data.html)
++  [American Psychological Asosciation](http://www.apa.org/research/responsible/data-links.aspx)
++  [GitHub](https://github.com/caesar0301/awesome-public-datasets)
++  [FiveThirtyEight](https://github.com/fivethirtyeight/data)
+
+You do not have to pick a dataset from one of these places.  These are just suggestions.
+
+##  Requirements
+
+1.  Your data must be contain a mix of categorical and continuous variables and be complex enough that you can create 8 interesting graphs (or 6 graphs if your team only has 3 people). Datasets with only a few variables will not work.
+
+2.  You CANNOT use any of the datasets that were used in any previous assignments in this course or any other course you have taken.  You must use a dataset that everyone in your group has never worked with before.
+
+3.  We are strongly encouraging groups to pick different datasets, so that no group is using the same dataset.  If you choose a dataset that another group has already chosen, we might ask some groups to switch.
+
+4.  Be sure to read the guidelines on the graphics below.  These will certainly influence what datasets you choose.
+
+
+
+#  Timeline
+
+## Friday, 4/6: Collaborative Lab 09
+
+Go to Lab with your group members and work together to submit the assignment, in which you will finalize your choice of dataset and start to plan out your poster.
+
+You will also sign up for your group's Tuesday 4/10 check-in with Jerzy.
+
+If you cannot make it to Lab, coordinate with your group to ensure that your group members are turning in the assignment, and make plans to make up for the work you missed.  In general, be a good group member. Part of your score on this project will be based on teammates' assessment of each other's contributions.
+
+##  Monday, 4/9, 1:20pm:  Group Check-In and Critique
+
+There will be **no lecture** on Monday 4/9.
+
+Instead, by the end of class time (1:20pm), the first draft of your poster should be complete.  Each group member should review the work of all other group members, give constructive feedback on others' graphics, and help solve any issues that arise. Use the `Lecture10_Checklist.pdf` cheat-sheet to help review each graph.
+
+Also be sure to coordinate themes, fonts, color palettes, etc. **across** your graphs. For instance, if you map the categories of some variable to a certain color palette or a certain set of line types, use the same mapping for *every* graph showing that variable on your poster.
+
+Again, there is no lecture that day, but you are welcome to hold your group check-in meeting at our usual class time & place.
+
+##  Tuesday, 4/10:  Meet with Jerzy
+
+We will hold 15-minute meetings with each team to review your posters on Tuesday, 4/10 during 10am to 5pm in BH 140D (Mac computer lab).
+
+**Each group is required to**:
+
++  Have a draft of their poster completed by Tuesday (including all graphs, all text, and all explanations of the dataset)
++  Have at least one group member (but preferably all group members) bring the poster draft for feedback
++  Have at least one group member communicate the feedback to all group members
+
+When bringing the poster to these meetings, just bring a small printed copy (on a 8.5x11 sheet of paper) and a computer copy (.pdf).  The printed copy does not need to be in color.
+
+
+##  Wednesday, 4/11, 1:20pm:  Submit Your Posters
+
+There will be **no lecture** on Wednesday 4/11.
+
+Instead, by the end of class time (1:20pm), each group should submit a single file, named Group[X].pdf, containing their final poster.  Jerzy and the TAs will handle poster printing.  Late posters will be deducted a substantial portion of the project grade and may not be printed in time for the presentations.
+
+
+##  Friday, 4/13, 12:30pm to 1:20pm, Room TBA:  Poster Presentations
+
+Each group will present their posters to Jerzy, the TAs, other professors, Statistics graduate students, and others in a public poster presentation.
+
+Each group member is required to speak about two graphs when presenting the posters.
+
+**Please have at least one group member (but preferably, all group members) arrive 15 minutes early to set up your poster!**
+
+
+#  Poster Guidelines
+
+##  Templates
+
+You are welcome to use your own template/design.  See Canvas / Assignments / Static Graphics Group Project for PowerPoint templates and a $\LaTeX$ template.
+
+Keep in mind that your posters will be printed on a 3-feet tall, 4-feet wide poster.  As such, ensure that your graphs are high-resolution! See Lab 09 for how to save high-resolution graphs.
+
+
+##  Graphs
+
+Each group member is required to create two graphics.
+
+* If your group has 4 members, you are required to have 8 graphs on your poster.
+* If your group has 3 members, you are required to have 6 graphs on your poster.
+
+It's nearly the end of the semester, so the graphs you make should be (nearly) perfect.  Take care to create excellent graphs that are informative and easy to understand.  All graphs should be properly labeled, titled, etc.  
+
+Additional restrictions (these will certainly influence your choice of dataset):
+
+1.  **Your graphs should tell a somewhat cohesive story.**  Come up with some general questions you want to answer with your dataset, and use your graphs to walk the viewer through a comprehensive analysis of those questions.  Use your graphs to demonstrate your findings and conclusions.
+
+2.  Each group is required to make several of the following types of graphs:  
+
++  Choropleth maps
++  Points or line segments on a basemap
++  Dendrograms
++  Network diagrams
++  Time series plots
+
+(Homework 10 will give you practice graphing networks and time series.)
+
+3.  Each group can have no more than a few graphs that show a single variable (e.g. one-variable bar charts, histograms, density estimates).
+
+4.  Each group should not have more than a few of the same type of graph.  For example, instead of many histograms, include some density plots instead.  Instead of many scatterplots, include some heat maps, contour plots, regression plots, etc instead.
+
+5. Nonetheless, always try to think: Is there a simpler graph that can tell the same story? Do not make your graphs unnecessarily complicated either.
+
+6. Finally, coordinate with your teammates to use consistent design across all of the different graphs. If a variable is used in several graphs, use the same color scheme for that variable in all graphs (don't map Male/Female to Blue/Red in one plot but Green/Purple in another). All team members should use the same `ggplot` theme (don't have different font styles in different graphs). Keep it looking clean and professional.
+
+However, **requirement 1 (tell a cohesive story) is the most important.**   Requirements 2-5 (variety in graphs) will not make up for a poster of diverse but pointless graphs that convey no message about what you learned from the dataset.
+
+
+##  Writing
+
+Below each graph, you can have up to three bullet-points, each of which is no more than 1-2 sentences, describing the graph, takeaways, etc.
+
+Each group should also designate a section of their poster to give a brief overview of the dataset. **Cite the data source here** (no need to put data-source captions on every graph separately), and describe important features (number of variables and observations; what do individual cases represent; any interesting aspects of the data collection process; etc.).
+
+You are also permitted to have Introduction, Conclusions, and/or Acknowledgements sections that contain additional text.  That said, **written text should be kept to a minimum**.
+
+
+##  Presentation
+
+Each group member is required to speak about two graphics.  These do not have to be the graphics they created, but it probably makes sense to do so.
+
+Be professional and courteous to anyone visiting your poster.  Assume that they do not know anything about your dataset, and be sure to explain the dataset / questions you're trying to answer in a clear and concise way.
+
+It should take about 5 minutes to go over your entire poster.  Aim to summarize each graph and its main takeaways in less than a minute, if possible.
+
+
+
+#  Grades
+
+The Static Graphics Group Project is worth 15% of your final grade.  This will be divided as follows:
+
++  Check-in with Jerzy:  5%
++  Poster:  5%
++  Presentation:  5%
++  Group Member Evaluation:  poor evaluations will reduce your individual grade to a lower fraction of the group's baseline grade
+
+You will earn a high grade on the check-in if you...
+
+* Bring a **complete** poster draft to the Tuesday 4/10 check-in (see above)
+* Incorporate feedback from the draft into your final poster
+
+Your poster will earn a high grade if you...
+
+* Tell a coherent story with your graphs (individually clear, well-made, & well-chosen; consistent design choices throughout) and minimal supporting text
+* Use an adequate variety of graph types (see the graph restrictions above)
+* Don't forget to use high-resolution images, include 2 graphs per team member, and cite your data source
+
+Your presentation will earn a high grade if you...
+
+* Give a clear overview of your dataset, questions, and conclusions
+* Explain how to read each graph and summarize its main takeaways
+* Demonstrate that your presentation was well-prepared, with a clear plan for transitioning between graphs and speakers
+
+Your group member evaluation will earn a high grade if you...
+
+* Contribute your fair share of work to preparing the poster and oral presentation, as well as the collaborative Labs and HWs
+* Present your part of the presentation on April 13 (or you have already arranged an alternate time with Jerzy)
+* Respond in a timely manner to contact from teammates, attend team meetings, and otherwise coordinate well with the group
+
+Remember to review the teamwork handouts and resources, from CMU's Global Communication Center, to prevent or manage conflicts in group work:
+
+* [Team Communication I: The Fundamentals of Managing Team Projects](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part1-handoutout-pdf)
+* [Team Communication II: Handling Difficult People and Situations](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part2-handout-pdf)
+* [Team Communication II worksheet](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part2-worksheet-pdf)
+
+

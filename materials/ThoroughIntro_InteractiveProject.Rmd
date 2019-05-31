@@ -1,0 +1,305 @@
+---
+title: "36-315 Interactive Graphics Group Project, Spring 2018"
+author: "See Canvas for Your Group Members"
+date: "See Due Dates Below"
+output: 
+  html_document:
+    toc:  true
+    toc_float:  true
+    code_folding:  show
+---
+
+#  Data
+
+You get to pick your own dataset again.
+
+##  Sources
+
+Here are some repositories with many, many datasets to choose from:
+
++  [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.html)
++  [Kaggle](https://www.kaggle.com/datasets)
++  [Dream To Learn](https://dreamtolearn.com/ryan/1001_datasets)
++  [Google Public Data Explorer](https://www.google.com/publicdata/directory)
++  [The US Government](https://www.data.gov/)
++  [Stanford Statistics](http://statweb.stanford.edu/~sabatti/data.html)
++  [American Psychological Asosciation](http://www.apa.org/research/responsible/data-links.aspx)
++  [GitHub](https://github.com/caesar0301/awesome-public-datasets)
++  [FiveThirtyEight](https://github.com/fivethirtyeight/data)
+
+You do not have to pick a dataset from one of these places.  These are just suggestions.
+
+
+##  Requirements
+
+1.  Your data must be contain a mix of categorical and continuous variables and be complex enough that you can create 8 interesting graphs (so datasets with only a few variables will not work).
+
+2.  You CANNOT use the same dataset that you or any of your teammates used for the static graphics group project.
+
+3.  I strongly encourage groups to pick different datasets, so that no group is using the same dataset.  If several groups choose the same dataset, I may ask you to switch.
+
+4.  Be sure to read the guidelines on the graphics below.  These will certainly influence what datasets you choose.
+
+5.  You cannot use a dataset that you have used before in this class or in any other class.
+
+##  Submission
+
+All groups must decide what dataset they are using by the due time of Lab 10 on Friday, 4/27.
+
+
+***
+***
+
+
+#  Task 1:  Create an Interactive, Web-Based, Data Vizualization Tool via Shiny
+
+**(10% of your Final Grade)**
+
+Your primary task in this project is to design an interactive, web-based, data visualization tool via Shiny to explore and analyze your dataset.
+
+##  App Templates
+
+See [here](http://shiny.rstudio.com/gallery/) for examples of nice Shiny templates.
+
+##  App Set-Up Requirements
+
+1.  Each group's app should be hosted publicly on [RStudio's ShinyApps.io Website](https://www.shinyapps.io/).  At least one person in your group should create a free account to do this.
+
+2.  Each group is required to use a Shiny theme or to design and use your own Shiny theme from scratch.  For more info, see here: 
+
++  [https://blog.rstudio.org/2016/10/13/shinythemes-1-1-1/]
++  [https://rstudio.github.io/shinythemes/]
+
+3.  Each group is strongly encouraged to use Shiny Dashboard or Flex Dashboard to lay out their Shiny app.  For more information on Shiny Dashboard, see here:
+
++  [https://rstudio.github.io/shinydashboard/]
++  [https://rstudio.github.io/shinydashboard/examples.html]
++  [https://cran.r-project.org/web/packages/shinydashboard/index.html]
+
+And for more information on Flex Dashboard, see here:
+
++  [https://blog.rstudio.org/2016/05/17/flexdashboard-easy-interactive-dashboards-for-r/]
++  [http://rmarkdown.rstudio.com/flexdashboard/]
++  [http://rmarkdown.rstudio.com/flexdashboard/examples.html]
+
+
+##  Graph Requirements
+
+Each group member is required to create two graphics.
+
+* Groups with four members are required to have eight graphs in your Shiny app.
+* Groups with three members are required to have six graphs.
+
+It's the end of the semester, so the graphs you make should be perfect.  Take care to create excellent graphs that are informative and easy to understand.  All graphs should be properly labeled, titled, etc.
+
+1. **Your graphs should tell a somewhat cohesive story.** Come up with some general questions you want to answer or explore with your dataset, and use your graphs to walk the viewer through a comprehensive analysis of those questions. Use your graphs to demonstrate your findings and conclusions and/or to help the app's users find personalized answers.
+
+2.  All graphs must have some interactive (e.g. via Shiny interactivity, Plotly, etc) or dynamic (e.g. animation) aspect to them.
+
+3.  There should be a variety of graph types. As in the poster project, you should not have too many graphs that show a single variable, nor too many graphs of the same type.
+
+4. Coordinate with your teammates to use consistent design and the same `ggplot` theme across all of the different graphs. Keep it looking clean and professional.
+
+
+##  Interaction Requirements
+
+There must be a variety of interaction types. (For instance, you cannot just add default Plotly zoom/pan interaction to all 8 graphs and do nothing else interactive.)
+
+1.  Each group is required to use Shiny widgets for interaction in at least two of their graphs.
+
+2.  Each group is required to use Plotly in at least two of their graphs.  For examples on Plotly, see here:
+
++  [https://cpsievert.github.io/plotly_book/index.html]
++  [http://www.htmlwidgets.org/showcase_plotly.html]
++  [https://plot.ly/r/]
+
+3.  Each group is strongly encouraged to use an HTML Widget (other than Plotly) in at least one of their graphs.  For examples on HTML Widgets, see here:
+
++  [http://www.htmlwidgets.org/showcase_threejs.html]
++  [http://gallery.htmlwidgets.org/]
+
+4. Each group is strongly encouraged to use tabs or pages to help break up the app into digestible pieces in a sensible way. The initial state (when you first open the app) should show an intro text paragraph and, ideally, a graphic which helps readers see an overview of the dataset.
+
+
+## Writing Requirements
+
+The app should be easy to use and clear to understand, even for someone who has **not** read your writeup document (see Task 2 below).
+You do not need a lot of in-app written text, but:
+
+* There should be an obvious intro/overview paragraph, helping readers understand the app's purporse. Also be sure to cite (and link to) your data source here---no need to put data-source captions on every graph separately.
+* For each graph, add a text box with 1-2 short sentences, making it clear why this graph is being shown. (If some graphs are tightly integrated with each other and shown side-by-side, you may only need a text box for each subsection of the app, not for each separate graph.) Here is [a good example of integrating text with graphs](https://hlandis.shinyapps.io/interactive_graphics_group_project_05-09_version/), from a previous semester of this course.
+* If needed, you should also add text to clarify any unusual/complex interactions, graphs, or other features.
+
+
+##  Submission
+
+1.  The version of your app that is posted to ShinyApps.io by noon on Friday 5/11/18 is the version that will be graded.
+
+2.  The code and data for your app must also be uploaded to Canvas by noon on Friday 5/11. This should be uploaded as a .zip file, containing a folder with all the necessary R files, datasets, etc. You should be able to unzip this file on a new computer with RStudio and use `shiny::runApp("path/to/your/folder")` to launch the app. **(Test this!)**
+
+3.  You should design your Shiny apps so that they work on any computer.  Reading data from a public location, or from a location within the directory containing the Shiny app, is the best strategy to ensure that they work on other computers.
+
+
+***
+***
+
+#  Task 2:  Written Overview of your Shiny App
+
+**(5% of your Final Grade)**
+
+Each group will write a short document to accompany their Shiny app.
+
+The format should be a simple .Rmd text document and its knitted .html version. You should include a ShinyApps.io link to your final app.
+
+##  Writeup Requirements
+
+* Introduction: The writeup should begin by introducing the dataset and your main questions. Cite the data source here (no need to put data-source captions on every graph separately), and describe important features (number of variables and observations; what do individual cases represent; any interesting aspects of the data collection process; etc.).
+
+* Example: Next, walk the reader through an example of using the app.  
+For each graph, describe what's being plotted, the main takeways of the graph, and any notable relationships, distributions, associations, patterns, etc. in the graph.  
+For each interactive feature, demonstrate how to use it to find some interesting feature of the dataset or to answer some question that otherwise would not be seen/answered.  
+(The audience for this Example section is a potential user of the app, perhaps your boss or the client who commissioned the project. You are answering "What can we do with this?")
+
+* Design Choices: The writeup should also describe the design choices you made. For each of your graphs and interactive features, explain: Why did you include this graph/interaction? How does it help us to explore/understand the dataset better than alternative graphs/interactions you could have used instead?  
+(The audience for the Design Choices section is a fellow data scientist, trying to learn how to make better graphics & apps, perhaps at an R Meetup or a statistics conference. You are answering "Why did you design it this way and not another way?")
+
+* You may also add Conclusions and/or Acknowledgements sections if appropriate.
+
+* Appendix: Finally, the writeup must include an appendix describing how you revised your draft app, based on the feedback your team received in the Lab 11 critiques.
+
+* Keep it concise. Each section should be no more than a couple of short paragraphs.
+
+##  Submission
+
+Turn in your team's writeup on Canvas by noon on Friday, 5/11. Include both the Rmd and html files.
+
+
+***
+***
+
+
+#  Task 3:  Peer, Self, and Course Evaluations
+
+**(5% of final grade)**
+
+##  Requirements
+
+Complete the peer and self evaluation form.  This form will be released at a later date.
+
+Complete the course evaluation form.  This form will be released at a later date.
+
+
+##  Submission
+
+These forms must be completed by noon on Friday, 5/11.
+
+
+***
+***
+
+
+#  Timeline
+
+##  Thursday, 4/19:  Groups Assigned
+
+Each student will work with a group of 3 or 4 people.  See your group assignments on Canvas.
+
+
+## Wednesday, 4/25: Collaborative HW 11 Due
+
+Homework 11 introduces you to Shiny. You will work with your final-project groups to submit the homework.  Each group should designate one person to submit the assignment.
+
+Also make sure that everyone has read RStudio's 7-lesson written tutorial on Shiny. The 1st lesson [starts here](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/).
+
+
+##  Friday, 4/27:  Collaborative Lab 10
+
+In Lab 10, you will work with your groups to choose a dataset for the final project. You will also practice using different layouts with Shiny, and at least one team member will make a free ShinyApps.io account to host your team's apps online.
+
+If you cannot attend Lab on Friday, coordinate with your group to ensure that your group members are turning in the assignment, and make plans to make up for the work you missed.  In general, be a good group member.
+
+
+## Wednesday, 5/2: Collaborative HW 12 Due (draft of final project)
+
+For Homework 12, you will submit a **complete** draft of your final-project Shiny app (including draft versions of all graphs).
+
+As usual, late assignments will not be accepted. Also, do not submit an incomplete or broken app. It is your responsibility to plan ahead and finish the draft early enough to debug any problems **before** the deadline.
+
+
+##  Friday, 5/4:  Collaborative Lab 11 (critique other teams' projects)
+
+For Lab 11, you will critique several other teams' draft projects.
+
+
+##  Friday, 5/11, noon:  Final Projects and Peer/Self/Course Evaluations Due
+
+Each group must have completed their Shiny app (including all graphs) and their writeup. We will also expect you to incorporate feedback from the Lab 11 critiques.
+
+You are also required to submit an evaluation of yourself, your group members, and the course in general.
+
+
+
+***
+***
+
+
+#  Grades
+
+The final Interactive Graphics Group Project is worth 20% of your final grade. This will be divided as follows:
+
+* Shiny app: 10%
+* Writeup: 5%
+* Turning in your peer/self/course evaluations: 5%
+
+As on the poster project, if you have poor evaluations from other group members, it will reduce your individual grade to a lower fraction of the group's baseline grade.
+
+Your Shiny app will earn a high grade if you...
+
+* Tell a coherent story with your graphs (individually clear, well-made, & well-chosen; consistent design choices throughout), interactions, and supporting text
+* Use an adequate variety of graph types (see the graph restrictions above)
+* Don't forget to include 2 graphs per team member and cite your data source
+* Incorporate feedback from the Lab 11 draft critiques into your final app
+
+Your writeup will earn a high grade if you...
+
+* Give a clear overview of your dataset and main questions
+* Explain how to read each graph and summarize its main takeaways
+* Explain how to use each interaction and summarize its main uses
+* Explain why each graph/interaction was chosen over other possible alternatives
+* Describe how you incorporated feedback from Lab 11
+
+You will earn a high grade based on group member evaluations if you...
+
+* Contribute your fair share of work to preparing the app and writeup, as well as the collaborative Labs and HWs
+* Respond in a timely manner to contact from teammates, attend team meetings, and otherwise coordinate well with the group
+
+Your peer/self/course evaluations will earn full credit if you complete them on time and include thoughtful feedback.
+
+Remember to review the teamwork handouts and resources, from CMU's Global Communication Center, to prevent or manage conflicts in group work:
+
+* [Team Communication I: The Fundamentals of Managing Team Projects](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part1-handoutout-pdf)
+* [Team Communication II: Handling Difficult People and Situations](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part2-handout-pdf)
+* [Team Communication II worksheet](https://www.cmu.edu/gcc/handouts-and-resources/team-comm-part2-worksheet-pdf)
+
+
+***
+***
+
+#  Advice
+
+Remember lessons from the New York Times: One useful kind of interactive app is an analysis of the dataset, with clear takeaways. The analysis should make sense even if nobody plays with the interactions beyond switching tabs to read the whole thing. But the interactions-with-graphs (tooltips, sliders, etc.) should reveal useful additional information and allow users to dig deeper.
+
+* [https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/]
+
+Remember the BBC and OECD examples: One way to be engaging is to help readers "find themselves" in the data. Find connections between "their" piece of the data and others, or highlight the biggest contrasts between "their" data and any outliers.
+
+* [http://www.bbc.com/news/world-15391515]
+* [https://www.oecdregionalwellbeing.org/]
+
+Remember past student project examples: Use a clean layout, introduce the project and dataset with a short overview, and design the text/graphs/interactions in a way that helps the audience.
+
+* [Nice use-case: sports analytics dashboard](https://dcortese.shinyapps.io/shinyapp/)
+* [Nice choice of interactions: which of the 2 datasets to show? which of the many phrases to explore? how big of a network to explore?](https://sallymcnichols.shinyapps.io/interactive-graphics/)
+* [Nice use of supporting text: short takeaways in text-boxes associated with each graph](https://hlandis.shinyapps.io/interactive_graphics_group_project_05-09_version/)
+
+
