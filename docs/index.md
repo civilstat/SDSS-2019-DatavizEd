@@ -7,4 +7,4 @@ Prompts and grading guidelines for class projects:
 * [StaticProject](ThoroughIntro_StaticProject.html)
 * [InteractiveProject](ThoroughIntro_InteractiveProject.html)
 
-See https://github.com/civilstat/SDSS-2019-DatavizEd/ for complete materials.
+See [https://github.com/civilstat/SDSS-2019-DatavizEd/](https://github.com/civilstat/SDSS-2019-DatavizEd/) for complete materials.
