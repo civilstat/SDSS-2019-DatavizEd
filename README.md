@@ -9,7 +9,7 @@ In the `materials` folder, you will find sample data-visualization-education mat
     - [Checklist](./materials/BriefIntro_Checklist.pdf) of principles to help you critique and revise your own graphics
 * ThoroughIntro = those who need solid dataviz skills, but also need basics of statistics and software
     - [Syllabus](./materials/ThoroughIntro_Syllabus.pdf)
-    - [StaticProject](./materials/ThoroughIntro_StaticProject.html), [InteractiveProject](./materials/ThoroughIntro_InteractiveProject.html) prompts and grading guidelines
+    - [StaticProject](https://civilstat.github.io/SDSS-2019-DatavizEd/ThoroughIntro_StaticProject.html), [InteractiveProject](https://civilstat.github.io/SDSS-2019-DatavizEd/ThoroughIntro_InteractiveProject.html) prompts and grading guidelines
 * Principles = those who want to hone dataviz skills, but have other basics down
     - [Syllabus](./materials/Principles_Syllabus.pdf)
     - [Link to complete course materials](http://civilstat.com/2015/10/statistical-graphics-and-visualization-course-materials/) including lectures, assignments, and grading rubrics
